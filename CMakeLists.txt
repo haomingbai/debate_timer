@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5) # CMake install : https://cmake.org/download/
-project(Debate Timer LANGUAGES CXX)
+project(Debate_Timer LANGUAGES CXX)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_PREFIX_PATH "c:/Qt/6.6.0/mingw_64") # Qt Kit Dir
 set(CMAKE_AUTOUIC ON)
