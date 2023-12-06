@@ -28,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
     //timesec=time/1000;
 
     this->setWindowIcon(QIcon(":/OIP-C.jpg"));
+    ui->label_2->hide();
 
     /*connect(refresh,&QTimer::timeout,this,[=]()mutable{
         int val=100;
@@ -74,7 +75,10 @@ void MainWindow::BeginTimer(){
     ui->nextDebater->show();
     ui->showDebater->setText("PM");
     refresh->start();
+    ui->label_2->show();
     ui->label_5->setText("本软件由HAOMING BAI制作");
+    ui->label->hide();
+    ui->timeEdit->hide();
 }
 
 void MainWindow::EndTimer(){
@@ -88,6 +92,9 @@ void MainWindow::EndTimer(){
     timesec=0;
     refresh->stop();
     ui->Timer->display("88:88");
+    ui->label_2->hide();
+    ui->label->show();
+    ui->timeEdit->show();
     ui->pauseDebate->setText("暂停辩论");
     ui->label_5->setText("本软件在GPL协议下发布");
 }
@@ -142,8 +149,8 @@ void MainWindow::NextTimer(){
     }
     case 8:{
         ui->showDebater->setText("OW");
-        break;
         ui->nextDebater->hide();
+        break;
     }
     }
     state=1;
