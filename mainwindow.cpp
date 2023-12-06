@@ -27,6 +27,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     //timesec=time/1000;
 
+    this->setWindowIcon(QIcon(":/OIP-C.jpg"));
+
     /*connect(refresh,&QTimer::timeout,this,[=]()mutable{
         int val=100;
         if(val>=0)
@@ -49,7 +51,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->Timer->display("88:88");
     //timer->start(5000);
     ui->showDebater->setText("");
-    bell->setSource(QUrl::fromLocalFile("bell.wav"));
+    bell->setSource(QUrl::fromLocalFile(":/bell/bell.wav"));
     bell->setVolume(1.0);
     bell->setLoopCount(1);
     ui->label_5->setText("本软件在GPL协议下发布");

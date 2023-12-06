@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/bell">
+        <file>bell.wav</file>
+    </qresource>
+    <qresource prefix="/icon"/>
+    <qresource prefix="/">
+        <file>OIP-C.jpg</file>
+    </qresource>
+</RCC>
