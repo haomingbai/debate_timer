@@ -189,7 +189,7 @@ void MainWindow::refreshTime(){
         ui->Timer->display("88:88");
         refresh->stop();
     }
-    qDebug()<<(int)(time/1000);
+    //qDebug()<<(int)(time/1000);
     if((int)(time/1000)-60==timesec||timesec==60) bell->play();
     else if(timesec==0){
         bell->play();
