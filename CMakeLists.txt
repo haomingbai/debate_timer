@@ -10,9 +10,9 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Multimedia)
 #find_package(Qt5Multimedia)
-find_package(Qt6 REQUIRED COMPONENTS Multimedia)
+#find_package(Qt6 REQUIRED COMPONENTS Multimedia)
 
 #set(Qt6MultimediaWidgets_DIR **/Qt/6.6.0/mingw_64/lib/cmake/Qt5MultimediaWidgets)
 
